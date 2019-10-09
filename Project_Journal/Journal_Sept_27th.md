@@ -4,13 +4,14 @@
 <h2 align="right">Engineering Journal</h2>
 <h2 align="right">Date:27 September 2019</h2>
 
+<br>
 A task that I had last week was finalising my project 
 And this week we have to submit our project ideas for our final year project. The project that I decided to go with was the home automation project. I choose this project because I can implement different things such as monitoring sensors, Machine learning and other topic that I find of interest.
+
 #### Next Steps for this week :
 
 <p>Update on the following things to do this week</p>
 
 - [ ] To submit my  project proposal
-[A[A[A[A[A
-[A[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
-  [3~###[C[C[C[D[D[D[D[D[D[D[D[D
+
+
