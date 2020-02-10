@@ -1,13 +1,13 @@
-![Gmit logo](/gmit.png) 
+<img align="left" width="250" height="200" src="/gmit.png">
 
-# FYP_Project 
+<h1 align="right">FYP Project</h1>
+<h2 align="right">Engineering Journal</h2>
+<h2 align="right">Date:<i>10/02/2022</i> Journal</h2>
 
-## Engineering Journal
-
-## Date *This text is italicized*
+<p>&nbsp;</p>
 
 ### Tasks
-*This text is italicized*
+ *This text is italicaghyhized*
 
 - [x] Finish my changes
 - [ ] Push my commits to GitHub
