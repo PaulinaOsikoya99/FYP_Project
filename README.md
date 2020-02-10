@@ -30,38 +30,28 @@ Year: 4<br>
 - [x] Delivery Service such as DHL, FedEx no longer have to wait for the owner to be at the house as the user will be able to connect to the delivery man via the video stream mechanism implemented in the house.
 - [x] Ease for the Customer -  customer can lock their door or check the status of their door while not being present at the house.
 - [x] The user can control the usage of appliances within their home via the app or website
-- [x]Integrated system for the user ( aware of the day ahead of them)
 - [x] Fire aware and proof Smoke sensor will alert the Solenoid values to release water to stop a fire from happening 
+- [x] Integrated system for the user ( aware of the day ahead of them)
 
 <p align="left">All my hardware elements, digital inputs and outputs and analog inputs (i.e. the green led, the on / off switches and the various sensors ) will be connected to both the esp32 and the Raspberry pi 3, which will execute the preprogrammed algorithms I will write for the functionality of my project. The following Headings bellow explain the Mechanism andthe functionality it brings to the IOT Home:
 </p>
 
-<p align="left"></p>
-<p align="left"></p>
-<p align="left"></p>
-
-<p>List can be nested (lists inside lists):</p>
-
-<ul>
-  <li><b>Sensor:</b></li>
-    <p align="left">In my FYP , many sensors are implemented such as proximity , servo motors, humidity , temperature sensor (temp regulation), solenoid valve (for water dissipation), Speaker: 0.25W, 8 ohms, buzzer  and potentiometer sensors. The function of these sensors are to track temperature, open and close doors, windows, gate and garage door, serves as alarm system and also for water dissipation of water in the case of fire and hypothetically water grass and flower if  it was a Lifesize house.</p>
-   <li><b>Alexa:</b><ul>
-   p align="left">Serves a central component that listen for voice commands and executed function by sensors within the house</p>
-   <li><b>I2S:</b><ul>
-   p align="left">Is the technology that will be used to integrate the Alexa with the esp32 microcontroller.</p>
-   <li><b>IP Camera:</b><ul>
-   p align="left">Serves a central component that streams video to the website and both app if the user/ home owner is not presently at the house and also integrates machine learning to scan for faces and number plates that are familiar to the house. Will be developed on the raspberry pi 3
+<h4><b>Sensor:</b></h4>
+<p align="left">In my FYP , many sensors are implemented such as proximity , servo motors, humidity , temperature sensor (temp regulation), solenoid valve (for water dissipation), Speaker: 0.25W, 8 ohms, buzzer  and potentiometer sensors. The function of these sensors are to track temperature, open and close doors, windows, gate and garage door, serves as alarm system and also for water dissipation of water in the case of fire and hypothetically water grass and flower if  it was a Lifesize house.</p>
+<h4><b>Alexa:</b></h4>   
+<p align="left">Serves a central component that listen for voice commands and executed function by sensors within the house</p>
+<h4><b>I2S:</b></h4>
+<p align="left">Is the technology that will be used to integrate the Alexa with the esp32 microcontroller.</p>
+<h4><b>IP Camera:</b></h4>
+<p align="left">Serves a central component that streams video to the website and both app if the user/ home owner is not presently at the house and also integrates machine learning to scan for faces and number plates that are familiar to the house. Will be developed on the raspberry pi 3
 </p>
-   <li><b>OpenCV:</b><ul>
-   p align="left">Is the software that will be for the machine learning and facial recognition </p>
-   <li><b>I2C:</b><ul>
-   p align="left">I2C is the serial protocol that will be used for the communication between the esp32 and the pi 3
-Bluetooth:
+<h4><b>Open CV:</b></h4>
+<p align="left">Is the software that will be for the machine learning and facial recognition </p>
+<h4><b>I2C:</b></h4>
+<p align="left">I2C is the serial protocol that will be used for the communication between the esp32 and the pi 3
+<h4><b>Bluetooth:</b></h4>
 Is the  technology that will be used for communication between the IOT Home system and the mobile </p>
-   <li><b>K8s platform (website and Mobile Application):</b><ul>
-   p align="left">The Container Technology Orchestration framework Kubernetes(K8s) will be implemented into both the app and website. The benefits to this are user scaling control, lower latency and performance 
-
+<h4><b>K8s platform (website and Mobile Application):</b></h4>
+<p align="left">The Container Technology Orchestration framework Kubernetes(K8s) will be implemented into both the app and website. The benefits to this are user scaling control, lower latency and performance 
 </p>
-   </li>
- 
-</ul>
+
