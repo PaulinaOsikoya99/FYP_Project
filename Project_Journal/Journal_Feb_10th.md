@@ -14,44 +14,25 @@
 - [ ] Setting up MQTT between the Raspberry pi and the esp32
 
 ### Reflection
+<p></p>
+<p></p>
 
-
-### Issues
-
-| Name | issue        | Solution |
-| ------------- | ----------- | ----------- |
-| Finger Print Sensor          | ~~Display the~~ help window.|agagag|
-| Close         | _Closes_ a window     |aggga|
+### Issues and Solutions
+ *For this week, this was the following issues I encountered:*
 
 #### Hardware
-- this week i encountered an issue with the finger print sensor
-| Name | issue         |
-| ------------- | ----------- |
-| Finger Print Sensor          | ~~Display the~~ help window.|
-| Close         | _Closes_ a window     |
-
-#### Software
-- Finish my changes
-
-
-### Solutions
-#### Hardware
-- [x] Finish my changes
-- [ ] Push my commits to GitHub
-- [ ] Open a pull request
-
-#### Software
-- [x] Finish my changes
-- [ ] Push my commits to GitHub
-- [ ] Open a pull request
-
 | Left-Aligned  | Center Aligned  | Right Aligned |
 | :------------ |:---------------:| -----:|
 | col 3 is      | some wordy text | $1600 |
 | col 2 is      | centered        | $12 |
 | zebra stripes | are neat        | $1 |
 
-| Name | Description          |
-| ------------- | ----------- |
-| Help          | ~~Display the~~ help window.|
-| Close         | _Closes_ a window     |
+
+#### Software
+| Left-Aligned  | Center Aligned  | Right Aligned |
+| :------------ |:---------------:| -----:|
+| col 3 is      | some wordy text | $1600 |
+| col 2 is      | centered        | $12 |
+| zebra stripes | are neat        | $1 |
+
+
