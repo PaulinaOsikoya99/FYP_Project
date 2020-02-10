@@ -17,7 +17,7 @@ git commit
 ## This is an <h2> tag
 ###### This is an <h6> tag
   
-  ![GitHub Logo](/images/logo.png)
+  ![Gmit logo](/gmit.png)
 Format: ![Alt Text](url)
 
 First Header | Second Header
