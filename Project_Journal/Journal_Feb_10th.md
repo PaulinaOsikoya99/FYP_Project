@@ -13,10 +13,6 @@
 - [x] investigating why the fingerprint is not working 
 - [ ] Setting up MQTT between the Raspberry pi and the esp32
 
-### Reflection
-<p></p>
-<p></p>
-
 ### Issues and Solutions
  *For this week, this was the following issues I encountered:*
 
