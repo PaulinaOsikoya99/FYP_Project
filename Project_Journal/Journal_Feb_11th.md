@@ -35,6 +35,7 @@
 - [ ] Setting up MQTT between the Raspberry pi and the esp32
 
 <p>During the lab class for project, I managed to set up the MQTT broker on the raspberry pi and I will now work on getting it integrated with the ESP 32.</p>
+
 - [ ] Solving the fingerprint sensor problem
 
 <p>I think the next steps that I will take with the fingerprint sensor will be to try set it up on the raspberry pi and then test its functionality on that platform and finally have the fingerprint sensor on the pi communicate with the ESP 32 via MQTT</p>
