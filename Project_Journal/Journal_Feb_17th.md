@@ -14,6 +14,6 @@
 - [ ] Researching the Mean Stack 
 - [ ] Researching the RSTP protocol for stream videos over the network 
 
-<p>1</p>
+<p></p>
 
 
