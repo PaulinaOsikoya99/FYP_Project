@@ -1,4 +1,4 @@
-<img align="left" width="250" height="200" src="/gmit.png">
+<img align="left" width="250" height="200" src="./docker.png">
 
 <h1 align="right"><b>FYP Project</h1>
 <h2 align="right">Engineering Journal</h2>
