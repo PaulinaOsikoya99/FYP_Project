@@ -16,7 +16,7 @@
 ### Reflection
 <p>I believe this week i was able o get a few thingsaccomplished. I was able to check all of my sensors and test to see if they were in working order. I was able to spot on time that there was an issue with the fingerprint sensor for my home automation system and I am actively working on solving the issue. I was able to set MQTT communication on the raspberry pi and I am now working on getting it set up with the ESP 32 and also working towards setting up the fingerprint sensor on the raspberry pi </p>
 <p></p>
-
+<p></p>
 ### Issues and Solutions
  *For this week, this was the following issues I encountered:*
 
