@@ -5,7 +5,7 @@
 <h2 align="right">Date:10 Feburary 2020</h2>
 
 <p>&nbsp;</p>
-
+<p></p>
 ### Tasks
  *For this week, I set out to accomplish the following tasks and so far I hope to accomplish the following tasks:*
  
