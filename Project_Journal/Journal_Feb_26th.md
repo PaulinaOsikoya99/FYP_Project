@@ -18,19 +18,11 @@
 <p></p>
 
 ### Update:
-<pCurrently still developing my webpage and i was able to succesfully integrate Express into my node enviroment and my webpage now is interactive in the sense that the user is able to click between the different pages in the website.i will now focus on the styling of my webpage </p>
+<pCurrently still developing my webpage and i have start developing the look of the feel of the website and i have futher detailed findings of the mean stack under the heading research > mean stack in my github and it futher explains the mean stack in great depth and also notes why i choose to use this framework as oppossed to other frame works  </p>
 
 ### Issues and Solutions
  *For this week, this was the following issues I encountered:*
-<p>So far i have encountered one error which is the follow:</p>
-
--my node enviroment would not recongize the Express module and threw multiple errors stating that the module had be "deprecated"
-
-My Solution for this was:
-
-- i deleted and re- installed express and and ran the command:
-
-Command: $ `npm-start` and this fix the issue 
+<p>So far today i have not encountered any issue in regard to styling the various pages for my webpages</p> 
 
 #### Next Steps for this week :
 
