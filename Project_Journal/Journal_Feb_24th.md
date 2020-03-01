@@ -2,33 +2,34 @@
 
 <h1 align="right"><b>FYP Project</h1>
 <h2 align="right">Engineering Journal</h2>
-<h2 align="right">Date: 24 Feburary 2020</h2>
+<h2 align="right">Date:21 Feburary 2020</h2>
 
 
 <p>&nbsp;</p>
-
-### Issues and Solutions
- *For this week, this was the following issues I encountered:*
-<p>This week, i didnt encounter any major issues. The only issues that I had but was solved in the project lab was the issue with my rasberry. the issue was that the board wasn't excecuting the commands that i entered into the command line and after futher investigation it was due to the fact that the board didnt understand that i was logged in as a root user and to solve this issue i added
-sudo infront of all the commands i exected there after </p>
 
 ### Tasks
  *For this week, I set out to accomplish the following tasks and so far I hope to accomplish the following tasks:*
  
 - [ ] intergrating the Leds and the temp sensor with MQTT
 - [ ] Starting the development of the webpage for my final year project using flex box 
-- [ ] Researching the Mean Stack 
+- [x] Researching the Mean Stack 
 - [ ] Researching the RSTP protocol for stream videos over the network 
 
 <p></p>
 
+### Update:
+<p>During this week I have based most on my time on the development of my webpage using the mean stack. I have set up the node enviroment in which i will be developing my website and now i am currently working on connecting the various different pages for my webpage using express</p>
+
+### Issues and Solutions
+ *For this week, this was the following issues I encountered:*
+<p>So far i have not encountered any issues in regards to the development of my website and it has been predominantly research</p>
+
 #### Next Steps for this week :
 
-<p>For the week coming I will continue to progress with the following items and continue to update my progress on the following and also note any issue that i may come across</p>
+<p>Update on the following things to do this week</p>
 
 - [ ] intergrating the Leds and the temp sensor with MQTT
 - [ ] Starting the development of the webpage for my final year project using flex box 
 - [ ] implementing the mean stack into my webpage for my website
 - [ ] Researching the RSTP protocol for stream videos over the network 
-
 
