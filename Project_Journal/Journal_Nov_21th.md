@@ -9,7 +9,7 @@
 
  *For this week, I set out to accomplish the following tasks and so far, I hope to accomplish the following tasks:*
  
-- [ ] Setting up my sensor and creating a Web Server on the ESP32  
+- [ ] Setting up my sensor and creating a Web Server on the ESP32 
 
 <p></p>
 <p></p>
