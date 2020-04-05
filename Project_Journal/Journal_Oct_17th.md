@@ -3,7 +3,9 @@
 <h1 align="right"><b>FYP Project</h1>
 <h2 align="right">Engineering Journal</h2>
 <h2 align="right">Date:17 October 2019</h2>
+ 
 ### Tasks
+
  *For this week, I set out to accomplish the following tasks and so far I hope to accomplish the following tasks:*
  
 - [ ] researching Alexa and home to implement it into the ESP32
