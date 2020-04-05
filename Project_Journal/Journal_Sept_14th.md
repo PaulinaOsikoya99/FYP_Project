@@ -13,7 +13,8 @@ For my project ideas I had the following ideas:
 - [ ] A drone delivery service co-ordination 
 
 ### Update:
-<p I think that for my final year project I will opt for the home automation project because I find it more appealing to me and I feel that I can be more creative with this project  </p>
+
+I think that for my final year project I will opt for the home automation project because I find it more appealing to me and I feel that I can be more creative with this project  
 
 
 #### Next Steps for this week :
@@ -21,4 +22,6 @@ For my project ideas I had the following ideas:
 <p>Update on the following things to do this week</p>
 
 - [ ] To finalize my project idea and draft a plan on how I will go about doing my project 
+ 
+
  
