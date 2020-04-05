@@ -1,2 +1,13 @@
 
 Edit notes for today 
+setting up the raspberry pi on for mqtt and connecting it to the aws iot core 
+testing
+
+installed dockker on the rasberry pi 
+istalled node js 
+issues installing npm
+wasnt connec to the inter net
+dns  issues or 
+
+code change /etc/resolv.conf file 
+nameserver 8.8.4.4.

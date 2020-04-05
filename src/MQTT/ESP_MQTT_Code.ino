@@ -18,11 +18,11 @@
 #define DHT_PIN 33 // pin connected to data pin of DHT11
 #define DHT_TYPE DHT11  // Type of the DHT Sensor, DHT11/DHT22
 
-#define WIFI_SSID "iPhone" // SSID of your WIFI
-#define WIFI_PASSWD "12345678" //your wifi password
+#define WIFI_SSID "your ssid" // SSID of your WIFI
+#define WIFI_PASSWD "your wifi password " //your wifi password
 
-#define CLIENT_ID "Temp_Humidity"// thing unique ID, this id should be unique among all things associated with your AWS account.
-#define MQTT_TOPIC "$aws/things/MQTT_AWS/shadow/update" //topic for the MQTT data
+#define CLIENT_ID "your unique id"// thing unique ID, this id should be unique among all things associated with your AWS account.
+#define MQTT_TOPIC "your topic" //topic for the MQTT data
 #define AWS_HOST "" // your host for uploading data to AWS, ##commented out for security available on aws acc
 
 DHT dht(DHT_PIN, DHT_TYPE);
