@@ -1,1 +1,32 @@
 added esp32 coomunication with AWS
+
+
+<img align="left" width="250" height="200" src="/gmit.png">
+
+<h1 align="right"><b>FYP Project</h1>
+<h2 align="right">Engineering Journal</h2>
+<h2 align="right">Date: 22 January 2020</h2>
+
+### Tasks
+ *For this week, I set out to accomplish the following tasks and so far I hope to accomplish the following tasks:*
+ 
+
+
+- [x]adding aws iot core to esp32
+
+
+
+
+ 
+
+<p></p>
+<p></p>
+
+### Update:
+<p> this week I was able to implement adding mqtt communication between the esp32 and aws iot core this was done by installing libraries that made it possible to be able to implement it on the esp 32
+and then i made a AWS student account on which i was able to add the certs and private keys needed to set up the iot aws core to communicate with the esp32
+#### Next Steps for this week :
+
+<p>Update on the following things to do this week</p>
+
+- [ ]AWS to nodejs
