@@ -1,11 +1,4 @@
 
-Worked on application for house system installing flutter 
-Worked on poster 
-Worked on Report
-Poster is nearly done finishing touches 
-
-Tomorrow continue to work on application 
-
 <img align="left" width="250" height="200" src="/gmit.png">
 
 <h1 align="right"><b>FYP Project</h1>
