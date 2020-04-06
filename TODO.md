@@ -11,16 +11,16 @@
 - [ ] RSTP
 - [ ] MEAN STACK 
 - [ ] OPEN CV
-- [ ] IMAGES AND MATRIx
+- [ ] IMAGES AND MATRIX info
 - [ ] OPEN ALPR
 - [ ] ESP 32 issues and info 
-- [ ] pi and the disicion to split up the sensors between the two mirco controlls
+- [ ] pi and the choice to split up the sensors between the two mirco controllers
 - [ ] EC2 amazon 
 - [ ] SPEECH SYTHESIS
 - [ ] ML
 
 - [ ] FINGERPRINT SENSOR
-- [ ] ingress andf services 
+- [ ] ingress and mirco services 
 
 ##Code 
 - [ ] set up AWS things for esp 32 and send messages back and add that to the journal 
