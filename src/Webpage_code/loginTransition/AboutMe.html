@@ -1,0 +1,119 @@
+about us
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.column {
+  float: left;
+  width: 100%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+.row1 {
+  float: left;
+  width: 100%;
+  margin-bottom: 16px;
+  padding: 0 25px;
+}
+
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: 8px;
+}
+
+.about-section {
+  padding: 50px;
+  text-align: center;
+  background-color: #474e5d;
+  color: white;
+}
+
+.container {
+  padding: 0 16px;
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button:hover {
+  background-color: #555;
+}
+
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="about-section">
+  <h1>About Me</h1>
+  <p>Welcome to my page.</p>
+  <p>My Final year project is an internet of things (IOT) home automation system. The name of my home automation system is called Hestia. The name is derived from Ancient Greek religion, she was the goddess of ordering of domesticity, the family, and the home hence why I thought the name was befitting for my FYP.</p>
+</div>
+
+<h2 style="text-align:center">A little bit about me </h2>
+<div class="row">
+  <div class="column">
+    <div class="card">
+      <img src="./img/paulina2.jpg" alt="paulina" style="width:100%">
+      <div class="container">
+        <h2>Paulina Osikoya</h2>
+        <p class="title">Creator</p>
+        <p>Final year Software and Electronic Student.</p>
+        <p>G00348898</p>
+		<p >Hi! My name is Paulina Osikoya and a i'm a final year Software and Electronic Student at GMIT.My Final year project is an internet of things (IOT) home automation system. I decided to choose take on this project because I find IOT and home automation really interesting</p>
+      </div>
+    </div>
+  </div>
+
+ 
+
+   <div class="row1">
+        <p><button class="button" onclick="href =view/AboutUs">Contact me</button></p>
+  </div>
+
+
+</div>
+
+</body>
+</html>
