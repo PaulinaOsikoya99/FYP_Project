@@ -24,7 +24,7 @@
 #### Software
 - [x] Finish my changes
 - [ ] Push my commits to GitHub
-- [ ] Open a pull request
+- [ ] Issue with iot core to esp32 going to redo process again tomorrow 
 
 ### Solutions
 #### Hardware
