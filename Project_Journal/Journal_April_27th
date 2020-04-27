@@ -1,0 +1,8 @@
+Today i worked on a number of things:
+i finished the dockerization the nodejs app and also dockerize 
+MQTT
+MongoDb 
+to be their own individual env while interacting with one another using dokcer compose c
+added more code to the website 
+and starting to on control panel layout for website 
+
