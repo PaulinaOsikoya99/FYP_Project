@@ -1,0 +1,44 @@
+{
+  "name": "current-project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node app.js",
+    "devStart": "nodemon app.js"
+  },
+  "author": "Paulina Osikoya",
+  "license": "ISC",
+  "dependencies": {
+    "async": "^3.2.0",
+    "aws-iot-device-sdk": "latest",
+    "bcrypt": "^3.0.6",
+    "bcrypt-nodejs": "0.0.3",
+    "body-parser": "^1.19.0",
+    "console-log-html": "latest",
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "express-fileupload": "^1.1.6",
+    "express-flash": "0.0.2",
+    "express-handlebars": "^4.0.0",
+    "express-session": "^1.16.2",
+    "express-validator": "^6.4.0",
+    "fs": "^0.0.1-security",
+    "http": "^0.0.1-security",
+    "method-override": "^3.0.0",
+    "mongodb": "^3.5.5",
+    "mongoose": "^5.9.6",
+    "morgan": "^1.10.0",
+    "os": "^0.1.1",
+    "passport": "^0.4.0",
+    "passport-local": "^1.0.0",
+    "passport-local-mongoose": "latest",
+    "path": "^0.12.7",
+    "socket.io": "^2.3.0"
+  },
+  "devDependencies": {
+    "dotenv": "^8.0.0",
+    "nodemon": "^1.19.1"
+  }
+}
