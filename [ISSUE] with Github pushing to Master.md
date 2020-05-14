@@ -7,3 +7,5 @@ After pushing my recents commits on my PC it pushed and then displays an Error m
 <img align="center" width="250" height="200" src="error.PNG">
 
 going to try push files on another computer 
+
+--UPDATE: following Github ISSUE no #6868 :Can no longer push my commits #6868 to resove my issue 
