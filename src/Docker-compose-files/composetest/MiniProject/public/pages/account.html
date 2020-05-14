@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+        }
+
+        html {
+            box-sizing: border-box;
+        }
+
+        *, *:before, *:after {
+            box-sizing: inherit;
+        }
+
+        .column {
+            float: left;
+            width: 100%;
+            margin-bottom: 16px;
+            padding: 0 8px;
+        }
+
+        .card {
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            margin: 40px;
+            padding: 50px;
+
+        }
+
+        .about-section {
+            padding: 50px;
+            text-align: center;
+            background-image:  url("https://i.ibb.co/s2tnZ6K/IMG-20170627-203901372.jpg");
+            background-size: 100% 100%;
+            color: white;
+        }
+
+        .account-section {
+            padding: 50px;
+            text-align: center;
+            background-image: url("https://images.pexels.com/photos/132037/pexels-photo-132037.jpeg");
+            background-size: 100% 100%;
+            color: white;
+        }
+
+        .container {
+            padding: 0 16px;
+        }
+
+        .container::after, .row::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+
+        .title {
+            color: grey;
+        }
+
+        .button {
+            border: none;
+            outline: 0;
+            display: inline-block;
+            padding: 8px;
+            color: white;
+            background-color: #000;
+            text-align: center;
+            cursor: pointer;
+            width: 100%;
+        }
+
+        .button:hover {
+            background-color: #555;
+        }
+
+        @media screen and (max-width: 650px) {
+            .column {
+                width: 100%;
+                display: block;
+            }
+        }
+
+
+                .button1 {
+          background-color: #4CAF50; /* Green */
+          border: none;
+          color: white;
+          padding: 15px 32px;
+          text-align: center;
+          text-decoration: none;
+          display: inline-block;
+          font-size: 16px;
+          margin: 4px 2px;
+          cursor: pointer;
+        }
+
+
+        .button3 {width: 100%;}
+    </style>
+</head>
+<body>
+
+<div class="account-section">
+    <br><br>
+    <h1>House Hestia</h1>
+    <br><br><br>
+    <p>Paulina Final Year Project</p>
+</div>
+
+<h2 style="text-align:center">Your Account</h2>
+<div class="row">
+    <div class="column">
+        <div class="card">
+            <img src="/images/img_avatar2.png" alt="Avatar" style="width:100%; height: auto">
+            <div class="container">
+                <p class="title">Home Owner</p>
+                <p class="title"></p>
+                <br>
+                <p>Monitoring different aspects around the house from phone and website</p>
+                <br>
+
+            </div>
+        </div>
+    </div>
+    <form action="/home" method="get">
+      <button type="submit" class="button1 button3">Home </button>
+        <button type="submit" formmethod="get" formaction="/home" ></button>
+
+    </form>
+
+</div>
+</body>
+</html>

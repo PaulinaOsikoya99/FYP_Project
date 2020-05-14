@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Paulina's Final Year Project</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://unpkg.com/filepond/dist/filepond.css" rel="stylesheet">
+  <link rel="stylesheet" href="/style/index1.css" />
+  <link rel="stylesheet" href="/style/style-monitoring.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <script defer src="https://unpkg.com/filepond-plugin-file-validate-type/dist/filepond-plugin-file-validate-type.js"></script>
+  <script defer src="https://unpkg.com/filepond-plugin-file-encode/dist/filepond-plugin-file-encode.js"></script>
+  <script defer src="https://unpkg.com/filepond/dist/filepond.js"></script>
+  <script defer src="/javascripts/fileUpload.js"></script>
+  <script type="application/javascript" src="//cdn.rawgit.com/Alorel/console-log-html/master/console-log-html.min.js"></script>
+</head>
+<body>
+
+<div class="header">
+  <h1>House Hestia</h1>
+  <p> Final year project</p>
+</div>
+
+<div class="navbar">
+  <form action="/home" method="GET" class="active">
+    <button type="submit" class="link-button">Home</button>
+  </form>
+  <a href="/pages/about.html">About</a>
+  <a href="/pages/contact.html">Contact</a>
+    <a href="/pages/todo.html">todo-list</a>
+  <a href="/pages/account.html">Account</a>
+    <a href="/pages/Logout.html">Log Out</a>
+  <form action="/logout?_method=DELETE" metchod="POST" class="right">
+    <button type="submit" class="link-button"></button>
+  </form>
+</div>
+
+<div class="row">
+  <div class="side">
+    <h2>Hi {{ name }}</h2>
+    <h5>Avatar:</h5>
+    <div class="avatar" style="height:200px;"></div>
+    <h3>Incoming messages received</h3>
+    <div class="message" style="height:60px;"><span  id="input">Message received: </span></div><br>
+    <h3>Outgoing messages sent</h3>
+    <div class="message" style="height:60px;"><span  id="output">Message published:</span></div><br>
+  </div>
+  <div class="main">
+
+
+        <div class="services">
+        <h1>Montinoring</h1>
+        <div class="cen">
+          <div class="service">
+            <i class="fas fa-lightbulb"></i>
+            <h2>Lights</h2>
+            <p>This section sends a JSON String of 600 || 500 indicating the led is on or off to AWS iot core .</p>
+            <div class="w3-bar">
+              <form action="/led/on" method="post">
+                <button type="submit" class="w3-button w3-teal">LED On </button>
+                  <button type="submit" formmethod="post" formaction="/led/off" class="w3-button w3-red">LED Off</button>
+
+              </form>
+
+              <a>Led Status:{{ status }}  </a>
+            </div>
+          </div>
+
+
+
+          <div class="service">
+            <i class="fas fa-door-closed"></i>
+            <h2>Door</h2>
+            <p>This section sends a JSON String of 400 || 300 indicating the led is on or off to AWS iot core .</p>
+            <div class="w3-bar">
+              <form action="/Door/open" method="post">
+                <button type="submit" class="w3-button w3-teal">DOOR OPEN </button>
+                  <button type="submit" formmethod="post" formaction="/Door/closed" class="w3-button w3-red">DOOR CLOSED</button>
+
+              </form>
+
+              <a>Door Status: {{ status }}   </a>
+
+    </div>
+          </div>
+
+          <div class="service">
+            <i class="fas fa-archway"></i>
+            <h2>Window</h2>
+              <p>This section sends a JSON String of 200 || 100 indicating the led is on or off to AWS iot core .</p>
+            <div class="w3-bar">
+              <form action="/window/open" method="post">
+                <button type="submit" class="w3-button w3-teal">WINDOW OPEN </button>
+                  <button type="submit" formmethod="post" formaction="/window/closed" class="w3-button w3-red">WINDOW CLOSED</button>
+
+              </form>
+
+              <a>Window Status: {{ status }}  </a>
+    </div>
+          </div>
+
+          <div class="service">
+            <i class="fas fa-fire-extinguisher"></i>
+            <h2>Smoke alarm</h2>
+            <p>this section recieves a message of 1 or 0 from the esp32 indicating that the smoke alarm went on /off.</p>
+            <a>Smoke alarm Status: {{ status }}  </a>
+            <div class="w3-bar">
+
+
+    </div>
+          </div>
+        </div>
+
+        </div>
+  </div>
+
+</div>
+
+
+<div class="footer">
+  <h4>Final Year Project: House Hestia by Paulina Osikoya</h4>
+</div>
+<script>
+  $(document).ready(function(){
+    $("#submitBtn").click(function(){
+      $("#myForm").submit(); // Submit the form
+    });
+  });
+
+  function updateMessage(){
+    var xhttp = new XMLHttpRequest();
+    xhttp.onreadystatechange = function() {
+      if (this.readyState == 4 && this.status == 200) {
+        document.getElementById("input").innerHTML = this.responseText;
+      }
+    };
+    xhttp.open("POST", "/getMessage", true);
+    xhttp.send();
+  }
+
+  function sentMessage(){
+    var xhttp = new XMLHttpRequest();
+    xhttp.onreadystatechange = function() {
+      if (this.readyState == 4 && this.status == 200) {
+        document.getElementById("output").innerHTML = this.responseText;
+      }
+    };
+    xhttp.open("POST", "/getPublished", true);
+    xhttp.send();
+  }
+
+  window.setInterval(function(){
+    updateMessage();
+    sentMessage();
+  }, 10000);
+
+</script>
+</body>
+</html>
