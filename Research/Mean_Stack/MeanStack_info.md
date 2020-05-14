@@ -4,6 +4,7 @@
 <h2 align="right">Engineering Journal</h2>
 <h2 align="right">Date:11 Feburary 2020</h2>
 Aws iot core
+Below are the links that helped guide me through this section of my project and gave me more clearity
 <br>
 <h3 align="left">Links:</h3>
 <br>
