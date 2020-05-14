@@ -1,15 +1,10 @@
 #include <AWS_IOT.h>
-#include <WiFi.h>
 #include "ArduinoJson.h"
 AWS_IOT aws;
 
-#define DHT_PIN 33 // pin connected to data pin of DHT11
-#define DHT_TYPE DHT11  // Type of the DHT Sensor, DHT11/DHT22
-
-char HOST_ADDRESS[]="your host address";
-char CLIENT_ID[]= "your client id";
-char TOPIC_NAME[]= "your topics";
-
+char HOST_ADDRESS[]="a3v4cms691n0e7-ats.iot.us-east-1.amazonaws.com";
+char CLIENT_ID[]= "add your client id here";
+char TOPIC_NAME[]= "Add your topics here";
 
 int status = WL_IDLE_STATUS;
 int tick=0,msgCount=0,msgReceived = 0;
@@ -23,7 +18,6 @@ void mySubCallBackHandler (char *topicName, int payloadLen, char *payLoad)
     msgReceived = 1;
 }
 
-
 void MsgRcvdAWS() {
 
     if(msgReceived == 1)
@@ -36,28 +30,39 @@ void MsgRcvdAWS() {
          JsonObject& parsed = JSONBuffer.parseObject(rcvdPayload); //Parse message
 
          if (!parsed.success()) {   //Check for errors in parsing
- 
             Serial.println("Parsing failed");
             delay(5000);
-             return;
- 
+            return;
             }
 
             int value = parsed["test_data"];  
-             Serial.print("Sensor value: ");
-             Serial.println(value);
-        if (value == 500){
-           Serial.print("inside if statement led is on .");
-            digitalWrite(LED, HIGH);
-        } else if (value == 409){
-           Serial.print("inside if statement led is off .");
-            digitalWrite(LED, LOW); 
-            handleDoor();   
-        }else{
-          
-        }
-      //  Serial.print("Received Message:");
-       // Serial.println(rcvdPayload);
+            Serial.print("Sensor value: ");
+            Serial.println(value);
+                if (value == 600){ // light on / off
+                   Serial.print("inside if statement light is on .");
+                    digitalWrite(LED, HIGH);
+                } else if (value == 500){
+                   Serial.print("inside if statement light is off .");
+                    digitalWrite(LED, LOW); 
+                    handleDoor();  
+                } else if (value == 400){
+                   Serial.print("inside if statement door is open ."); 
+                    handleDoor();          
+                } else if (value == 300){
+                   Serial.print("inside if statement door is closed .");
+                    handleDoor(); 
+                } else if (value == 200){
+                   Serial.print("inside if statement window is open  .");
+                     handleWindow();         
+                } else if (value == 100){
+                   Serial.print("inside if statement window is closed ."); 
+                    handleWindow();     
+                }else{
+                  Serial.print("nothing recieved .");
+                }
+                
+//      //  Serial.print("Received Message:");
+//       // Serial.println(rcvdPayload);
 //         if( rcvdPayload ==  "{\"test_data\":\"500\"}")
 //         {
 //          Serial.println("got message");
@@ -70,7 +75,7 @@ void MsgRcvdAWS() {
 //          Serial.print("string not deliver ");
 //         // Serial.println(rcvdPayload);
 //           Serial.println(payload);
-//         }
+         }
     }
     if(tick >= 5)   // publish to topic every 5seconds
     {
@@ -99,9 +104,9 @@ void MsgRcvdAWS() {
           else{
             Serial.println(" Publish Failed!\n");
           }
-        }  
+        } 
+
     vTaskDelay(1000 / portTICK_RATE_MS); 
-    tick++;
-  }
-    
+    tick++;   
+  }  
 }

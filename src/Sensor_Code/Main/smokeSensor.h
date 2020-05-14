@@ -18,12 +18,16 @@ void smokeSensor() {
     smoke_sensor += String(analogSensor);
     char payload[40];
     smoke_sensor.toCharArray(payload, 40);
-    
-    sprintf(payload,"Smoke Sensor: ON");
-    if(hornbill.publish(TOPIC_NAME,payload) == 0)
+    Serial.println("Publishing:- ");
+    Serial.println(payload);
+    if(aws.publish("smoke",payload) == 0)
     {        
       Serial.print("Publish Message:");
-      Serial.println(payload);     
+      Serial.println(payload); 
+      Serial.println("Success\n");    
+    }
+    else{
+      Serial.println("Failed!\n");
     }
       
   }

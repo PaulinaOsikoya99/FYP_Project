@@ -1,8 +1,8 @@
 void motion() 
 {
-   motion = digitalRead(motion1); //PIR sensor pin
- 
-   Serial.println("Alarm detected!"); //Send things to serial for handy dandy info
+   digitalWrite(redLed, HIGH);
+   digitalWrite(buzzer, HIGH);
+   Serial.println("Alarm detected!"); //Send things to serial 
    Serial.print("motion ");
    Serial.println(motion);
    Serial.print("smoke ");

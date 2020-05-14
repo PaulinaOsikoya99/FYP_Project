@@ -5,8 +5,8 @@ String result;
 void ifttt()
 {
   const char host[ ]        = "maker.ifttt.com";          // maker channel of IFTTT
-  const char trigger[ ]     = "your trigger";                   //name of the trigger you would like to send to IFTTT
-  const char APIKey[ ]      = "your api key";      //Your maker key for Webhooks on IFTTT
+  const char trigger[ ]     = "add your trigger/s";             
+  const char APIKey[ ]      = "add your api key here";      //Your maker key for Webhooks on IFTTT
   Serial.print("Connect to: ");
   Serial.println(host);
   // WiFiClient to make HTTP connection
@@ -33,9 +33,9 @@ void ifttt()
     }
   Serial.println();
   Serial.println("closing connection");
-  Serial.println(); //space things our in serial monitor for purdy
+  Serial.println(); 
   Serial.println();
-  client.stop();  //V5 added this to disconnect
-  delay (20000); //This delay here just to stop spamming of emails
+  client.stop();  // disconnect
+
  }
   
