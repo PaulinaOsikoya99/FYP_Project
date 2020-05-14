@@ -1,7 +1,7 @@
 <p align="center">
   <img width="200" height="200" src="/gmit.png/">
 </p>
- [I'm an inline-style link](https://www.google.com)
+(https://www.google.com)
 
 <h1 align="left" ><b>FYP Project</b><br><br>Final Year Project<br></h1>
 
