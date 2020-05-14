@@ -73,7 +73,7 @@
           <div class="service">
             <i class="fas fa-door-closed"></i>
             <h2>Door</h2>
-            <p>This section sends a JSON String of 400 || 300 indicating the led is on or off to AWS iot core .</p>
+            <p>This section sends a JSON String of 400 || 300 indicating the door is open or closed to AWS iot core .</p>
             <div class="w3-bar">
               <form action="/Door/open" method="post">
                 <button type="submit" class="w3-button w3-teal">DOOR OPEN </button>
@@ -89,7 +89,7 @@
           <div class="service">
             <i class="fas fa-archway"></i>
             <h2>Window</h2>
-              <p>This section sends a JSON String of 200 || 100 indicating the led is on or off to AWS iot core .</p>
+              <p>This section sends a JSON String of 200 || 100 indicating the window is open or closed to AWS iot core .</p>
             <div class="w3-bar">
               <form action="/window/open" method="post">
                 <button type="submit" class="w3-button w3-teal">WINDOW OPEN </button>
@@ -105,7 +105,7 @@
             <i class="fas fa-fire-extinguisher"></i>
             <h2>Smoke alarm</h2>
             <p>this section recieves a message of 1 or 0 from the esp32 indicating that the smoke alarm went on /off.</p>
-            <a>Smoke alarm Status: {{ status }}  </a>
+              <div class="message" style="height:60px;"><span  id="input1">Smoke alarm Status: </span></div><br>
             <div class="w3-bar">
 
 
@@ -123,11 +123,7 @@
   <h4>Final Year Project: House Hestia by Paulina Osikoya</h4>
 </div>
 <script>
-  $(document).ready(function(){
-    $("#submitBtn").click(function(){
-      $("#myForm").submit(); // Submit the form
-    });
-  });
+
 
   function updateMessage(){
     var xhttp = new XMLHttpRequest();
@@ -137,6 +133,17 @@
       }
     };
     xhttp.open("POST", "/getMessage", true);
+    xhttp.send();
+  }
+
+  function updateMessage(){
+    var xhttp = new XMLHttpRequest();
+    xhttp.onreadystatechange = function() {
+      if (this.readyState == 4 && this.status == 200) {
+        document.getElementById("input1").innerHTML = this.responseText;
+      }
+    };
+    xhttp.open("POST", "/getMessage1", true);
     xhttp.send();
   }
 

@@ -29,13 +29,13 @@
             <input type="checkbox">
             <a href="#">Forgot your password?</a>
             <button>Sign In</button>
-            <% if (messages.error) { %>
-                <%= messages.error %>
-            <% } %>
+              {{# if (messages.error }}
+                  {{ messages.error }}
+              {{/if}}
+              {{# if (messages.info }}
+                  {{ messages.info }}
+              {{/if}}
 
-            <% if (messages.info) { %>
-                <%= messages.info %>
-            <% } %>
         </form>
     </div>
     <div class="overlay-container">
