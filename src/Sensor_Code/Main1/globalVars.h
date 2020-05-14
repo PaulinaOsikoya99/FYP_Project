@@ -1,0 +1,9 @@
+int servoPin1= 23; //servo motor for door
+int servoPin2 = 22; //servo motor for window
+int buzzerPin = 15;
+int redLed = 13;
+int smokeA0 = 4;
+int  motion1 =23 ;
+int sensorThres = 4094;
+int output=2;
+int output1=4;
