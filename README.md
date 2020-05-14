@@ -1,7 +1,7 @@
 <p align="center">
   <img width="200" height="200" src="/gmit.png/">
 </p>
-(https://www.google.com)
+
 
 <h1 align="left" ><b>FYP Project</b><br><br>Final Year Project<br></h1>
 
@@ -67,3 +67,8 @@ Year: 4<br>
 <p align="left">The Container Technology Is the technology that was used to create create the container for the different elements in my FYP and Docker compose will be used to help the container communicate with one another
 </p>
 
+<b>Trello:</b>
+https://trello.com/b/wMabNsvC/fyp
+
+<b>Youtube Presentation:</b>
+https://m.youtube.com/watch?v=QF8W7Al0L70&feature=youtu.be
