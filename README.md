@@ -3,12 +3,12 @@
 </p>
 
 
-<h1 align="left" ><b>FYP Project</b><br><br>Final Year Project<br></h1>
+<h1 align="center" ><b>House Hestia - IOT Smart Home Automation System</b><br><br>Final Year Project<br></h1>
 
 <br>
 <br>
 <p align="center">
-  <img width="200" height="200" src="/house.PNG/">
+  <img width="400" height="400" src="/house picture.PNG/">
 </p>
 
 <h4 align="left">BEng in Software and Electronic Engineering<br><br>
@@ -27,6 +27,10 @@ Year: 4<br>
 <h2 align="left"><b>Project Description</b></h2>
 <p align="left">My Final year project is an internet of things (IOT) home automation system. The name of my home automation system is called Hestia. The name is derived from Ancient Greek religion, she was the goddess of ordering of domesticity, the family, and the home hence why I thought the name was befitting for my FYP.</p>
 <p align="left">My FYP was developed and deployed on two microcontrollers which were then implemented into a house model designed and created by me and finally integrated with a website using the MEAN stack framework encapsulated inside a AWS EC2 instance.Finally, an experimental aspect of my project was hosting the application on Docker Container Framework using Docker Compose.</p>
+<h2 align="left"><b>Project Architectural Diagram</b></h2>
+<p align="center">
+  <img width="600" height="600" src="/diagram.png/">
+</p>
 
 <h2 align="left"><b>Project Functionality </b></h2>
 <p align="left">My FYP possesses both a creative and technical aspect. </p>
