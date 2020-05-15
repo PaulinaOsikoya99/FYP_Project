@@ -22,8 +22,7 @@ Year: 4<br>
 <p>&nbsp;</p>
 
 <h2 align="left"><b>Introduction</b></h2>
-<p align="left">Automation is becoming an increasingly massive section and hot topic in today’s IOT sector. From the automation of arduous long complex installations using basic scripts to automating our day today tasks by simply implementing a mechanism that notifies you of your daily tasks to be executed during your set out schedule.</p>
-<p align="left">During my Internship my role was centralized around automation and design of software to achieve and reach levels of performance that the world has never witnessed before.For  Final Year Project (FYP) i implemented similar.</p>
+<p align="left">Automation is becoming an increasingly massive section and hot topic in today’s IOT sector. From the automation of arduous long complex installations using basic scripts to automating our day today tasks by simply implementing a mechanism that notifies you of your daily tasks to be executed during your set out schedule. Among those topics is home automation. Home automation is a prevailing subject in automation and in IOT and generates billions of dollars in revenue each year. During my Internship, my role was centralized around automation and design of software to achieve and reach levels of performance that the world has never witnessed before. Premised on this fact, I wished to implement similar my Final Year Project (FYP). </p>
 
 <h2 align="left"><b>Project Description</b></h2>
 <p align="left">My Final year project is an internet of things (IOT) home automation system. The name of my home automation system is called Hestia. The name is derived from Ancient Greek religion, she was the goddess of ordering of domesticity, the family, and the home hence why I thought the name was befitting for my FYP.</p>
