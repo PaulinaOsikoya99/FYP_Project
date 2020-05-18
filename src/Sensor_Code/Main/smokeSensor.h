@@ -1,6 +1,6 @@
 #include <AWS_IOT.h>
 
-AWS_IOT hornbill;
+AWS_IOT aws;
 
 void smokeSensor() {
   int analogSensor = analogRead(smokeA0);
