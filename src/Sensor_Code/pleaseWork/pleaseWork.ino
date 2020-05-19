@@ -1,7 +1,7 @@
 #include <AWS_IOT.h>
 #include <WiFi.h>
 #include "ArduinoJson.h"
-AWS_IOT hornbill;
+AWS_IOT aws;
 
 char WIFI_SSID[]="iPhone";
 char WIFI_PASSWORD[]="your password ";
@@ -41,12 +41,12 @@ void setup() {
 
     Serial.println("Connected to wifi");
 
-    if(hornbill.connect(HOST_ADDRESS,CLIENT_ID)== 0)
+    if(aws.connect(HOST_ADDRESS,CLIENT_ID)== 0)
     {
         Serial.println("Connected to AWS");
         delay(1000);
 
-        if(0==hornbill.subscribe(TOPIC_NAME, mySubCallBackHandler))
+        if(0==aws.subscribe(TOPIC_NAME, mySubCallBackHandler))
         {
             Serial.println("Subscribe Successfull");
         }
@@ -117,7 +117,7 @@ void loop() {
     {
         tick=0;
         sprintf(payload,"Temperature: 1%d", msgCount++);
-        if(hornbill.publish(TOPIC_NAME,payload) == 0)
+        if(aws.publish(TOPIC_NAME,payload) == 0)
         {        
             Serial.print("Publish Message:");
           //  Serial.println(payload);
